@@ -8,7 +8,7 @@ import android.widget.ImageView
 import com.example.games.R
 import kotlinx.android.synthetic.main.renglon.view.*
 
-class MemoramaAdapter(val chips: ArrayList<Chip>):
+class MemoramaAdapter(val chips: ArrayList<Chip>, val cards_imgs : IntArray):
 
     RecyclerView.Adapter<MemoramaAdapter.ChipViewHolder>(){
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ChipViewHolder {
@@ -30,7 +30,9 @@ class MemoramaAdapter(val chips: ArrayList<Chip>):
 
         init {
             item.setOnClickListener {
-                imageView.setImageResource(R.drawable.rocket)
+                imageView.setImageResource(cards_imgs[0])
+                
+
             }
         }
     }

@@ -101,7 +101,7 @@ class Tablero {
             var i = j - 1;
             celdas[i / 3][i % 3]?.estadoCelda = Ficha.CRUZ
         }
-        
+
         for (j in p2) {
             var i = j - 1;
             celdas[i / 3][i % 3]?.estadoCelda = Ficha.BOLA
