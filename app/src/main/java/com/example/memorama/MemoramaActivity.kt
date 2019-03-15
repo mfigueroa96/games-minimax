@@ -24,9 +24,11 @@ class MemoramaActivity : AppCompatActivity() {
         }
 
         val chips = ArrayList<Chip>()
-        for (i  in 0..12)
-            chips.add(Chip(R.mipmap.ic_launcher))
-        var  adapter = MemoramaAdapter(chips, cards_imgs)
+        for (i  in 0..11)
+            chips.add(Chip(R.mipmap.ic_launcher, cards_imgs[i]))
+        Log.d("MEMORAMA", "GOOOOOO")
+        var  adapter = MemoramaAdapter(chips)
+        Log.d("MEMORAMA", "AQUÍiiiiii")
         rv.adapter = adapter
     }
 
